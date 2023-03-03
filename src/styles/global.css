@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+/* navbar  */
+.navbar {
+  padding: 0.5rem 0;
+  background-color: #f1f1f1;
+}
+.nav_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1124px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_menu {
+  gap: 2.5rem;
+  display: flex;
+}
+.author_list {
+  gap: 5rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.author_list .gatsby-image-wrapper {
+  width: 350px;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
