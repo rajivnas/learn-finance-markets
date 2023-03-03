@@ -15,13 +15,20 @@ require("dotenv").config({
 module.exports = {
   plugins: [
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Roboto Serif", "Roboto"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-sanity`,
       options: {
         projectId: process.env.SANITY_PROJECT_ID,
         dataset: process.env.SANITY_DATASET,
         token: process.env.SANITY_TOKEN,
         graphqlTag: "default",
-        // watchMode: true,
       },
     },
     `gatsby-plugin-image`,

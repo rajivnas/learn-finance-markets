@@ -14,10 +14,6 @@ export default function About() {
           quae magnam provident ratione dolor possimus. Dolor nihil dolorem
           delectus mollitia sunt enim!
         </p>
-
-        <a href="https://server-nine-coral.vercel.app/desk" target="_blank">
-          Admin
-        </a>
       </div>
     </Layout>
   );
