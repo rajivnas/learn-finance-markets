@@ -1,0 +1,116 @@
+:root {
+  --banner: rgb(242, 252, 252);
+  --primary: #3dcfd3;
+  --bg-primary: rgb(251, 255, 255);
+  --bg-secondary: rgb(248, 253, 253);
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+}
+
+.section_title {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+/* Banner section  */
+.banner {
+  height: calc(100vh - 58px);
+  background-color: var(--banner);
+}
+.banner .container {
+  padding-top: 2.2rem;
+}
+.banner .container .text_block {
+  margin-bottom: 1.5rem;
+}
+.banner .container .text_block h1 {
+  font-size: 1.8rem;
+  color: var(--dark);
+  line-height: 2.3rem;
+  padding-bottom: 0.8rem;
+}
+.banner .container .text_block p {
+  font-size: 1.08rem;
+  color: #040404;
+  line-height: 1.7rem;
+  padding-bottom: 0.8rem;
+}
+.banner .container .text_block .btn_banner {
+  border-radius: 50px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary);
+  border: 1px solid transparent;
+}
+.banner .container .text_block .btn_banner:hover {
+  background-color: #3ec7cc;
+}
+.banner .container .img_block {
+  margin: 0 auto;
+  max-width: 440px;
+}
+.banner .container .img_block img {
+  width: 100%;
+  height: auto;
+}
+
+/* Feature section  */
+.feature {
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+/* Latest section  */
+.latest {
+  height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+@media (min-width: 768px) {
+  /* Banner section  */
+  .banner .container {
+    display: flex;
+    gap: 1rem;
+    padding-top: 3.5rem;
+    justify-content: space-between;
+  }
+  .banner .container .text_block {
+    margin: 1.8rem 0 0 0;
+  }
+  .banner .container .text_block h1 {
+    line-height: 2.5rem;
+  }
+  .banner .container .text_block p {
+    font-size: 1rem;
+    line-height: 1.85rem;
+    margin-bottom: 0.95rem;
+  }
+  .banner .container .text_block .btn_banner {
+    padding: 0.8rem 1.6rem;
+  }
+  .banner .container .img_block {
+    margin: 2rem 0 0 0;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Banner section  */
+  .banner .container {
+    gap: 2rem;
+  }
+  .banner .container .text_block {
+    margin: 2.5rem 0 0 0;
+  }
+  .banner .container .text_block h1 {
+    font-size: 2.35rem;
+    line-height: 3rem;
+  }
+  .banner .container .text_block p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
