@@ -1,5 +1,6 @@
 @import url("./utility.css");
 @import url("./landing.css");
+@import url("./others.css");
 
 * {
   padding: 0;
@@ -19,7 +20,7 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1044px;
 }
 
 /* navbar  */

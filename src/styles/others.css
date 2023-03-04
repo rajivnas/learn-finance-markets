@@ -1,0 +1,130 @@
+:root {
+  --dark: #161616;
+}
+
+/* Blog page  */
+.blog_page_list {
+  margin-bottom: 2rem;
+}
+.blog_page_item {
+  margin-bottom: 1.25rem;
+}
+.blog_page_item .gatsby-image-wrapper {
+  border-radius: 7px;
+  margin-bottom: 0.5rem;
+}
+.blog_page_item h1 {
+  color: var(--dark);
+  font-size: 1.45rem;
+}
+.right_banner {
+  display: none;
+}
+
+/* contact page  */
+.contack_block .contact_img_block {
+  margin-bottom: 1.5rem;
+}
+.contack_block img {
+  width: 100%;
+}
+.contack_block .contact_form h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.contact_form input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media (min-width: 768px) {
+  /* Blog page  */
+  .blog_page .container {
+    display: flex;
+    gap: 1.12rem;
+    justify-content: space-between;
+  }
+  .blog_page_list {
+    width: 95%;
+    display: grid;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog_page_item {
+    margin-bottom: 0;
+  }
+  .blog_page_item .gatsby-image-wrapper {
+    margin-bottom: 0.7rem;
+  }
+  .blog_page_item h1 {
+    font-size: 1.15rem;
+    line-height: 1.55rem;
+    margin-bottom: 1rem;
+  }
+  .right_banner {
+    display: block;
+  }
+  .right_banner .side_banner {
+    margin-bottom: 1.2rem;
+  }
+  .right_banner .side_banner h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+  .right_banner .side_banner .category li {
+    color: #2d2e2e;
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+  }
+  .right_banner .side_banner .recent p {
+    margin: 0.6rem 0;
+    font-size: 0.85rem;
+    line-height: 1.35rem;
+    text-decoration: underline;
+  }
+
+  /* contact page  */
+  .contack_block {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  .contack_block .contact_img_block {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+  .contack_block .contact_form h3 {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Blog page  */
+  .blog_page .container {
+    gap: 1.5rem;
+  }
+  .blog_page_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
