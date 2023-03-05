@@ -1,5 +1,14 @@
 :root {
   --dark: #161616;
+  --primary: #3dcfd3;
+}
+
+/* disabled */
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #c0c0c0;
+  background-color: #ffffff;
 }
 
 /* Blog page  */
@@ -21,6 +30,93 @@
   display: none;
 }
 
+/* Blog Prewiew  */
+.blog_preview .container .gatsby-image-wrapper {
+  border-radius: 3px;
+  margin-bottom: 0.8rem;
+}
+.blog_preview .container .blog_content .main_content {
+  margin-bottom: 1.5rem;
+}
+.blog_preview .container .blog_content .main_content h1 {
+  font-size: 1.55rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Pagination */
+.pagination {
+  gap: 1rem;
+  max-width: 220px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.page_counter {
+  padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+  font-size: 0.95rem;
+  background: #f6f6f6;
+}
+
+/* Category page  */
+.category_list .category_item {
+  padding: 1rem 0;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 1px 3px rgb(146 161 176 / 20%);
+}
+.category_list .category_item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.category_list .category_item p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Author list page  */
+.author_page .section_title {
+  text-align: center;
+}
+.author_list .author_person {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1.35rem;
+}
+.author_list .author_person .gatsby-image-wrapper {
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/* Author page  */
+.author_block {
+  margin-bottom: 1rem;
+}
+.author_block .author_img .gatsby-image-wrapper {
+  margin-bottom: 0.8rem;
+}
+.author_block .author_info h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.55rem;
+}
+.author_block .author_info p {
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+}
+
+/* About page  */
+.about_page {
+  margin-bottom: 1.8rem;
+}
+.about_page .about_info h3 {
+  color: var(--dark);
+  font-size: 1.22rem;
+  margin: 1.2rem 0 0.5rem 0;
+}
+.about_page .about_info p {
+  font-size: 1.08rem;
+  line-height: 1.65rem;
+}
+
 /* contact page  */
 .contack_block .contact_img_block {
   margin-bottom: 1.5rem;
@@ -28,11 +124,13 @@
 .contack_block img {
   width: 100%;
 }
+.contack_block .contact_form {
+  max-width: 450px;
+}
 .contack_block .contact_form h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-
 .contact_form input[type="text"],
 input[type="email"],
 textarea {
@@ -46,7 +144,7 @@ textarea {
   resize: vertical;
 }
 input[type="submit"] {
-  background-color: #04aa6d;
+  background-color: var(--primary);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -54,7 +152,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #3ec7cc;
 }
 
 @media (min-width: 768px) {
@@ -104,6 +202,41 @@ input[type="submit"]:hover {
     text-decoration: underline;
   }
 
+  /* Category page  */
+  .category_list {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category_list .category_item {
+    margin: 0;
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+  }
+
+  /* Author page  */
+  .author_list {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .author_list .author_person {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Author page  */
+  .author_block {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  .author_block > div {
+    width: 50%;
+  }
+  .author_block .author_info {
+    margin-top: 1.5rem;
+  }
+
   /* contact page  */
   .contack_block {
     display: flex;
@@ -125,6 +258,30 @@ input[type="submit"]:hover {
     gap: 1.5rem;
   }
   .blog_page_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Blog Prewiew  */
+  .blog_preview .container .blog_content {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  .blog_preview .container .blog_content .main_content {
+    width: 90%;
+  }
+  .blog_preview .container .blog_content .main_content h1 {
+    font-size: 1.65rem;
+  }
+
+  /* Category page  */
+  .category_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Author page  */
+  .author_list {
     grid-template-columns: repeat(3, 1fr);
   }
 }

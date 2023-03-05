@@ -1,32 +1,27 @@
-import { graphql } from "gatsby";
 import React from "react";
+import { graphql } from "gatsby";
 import BlogList from "../components/blog/BlogList";
-import Pagination from "../components/blog/Pagination";
 import Layout from "../components/shared/Layout";
 
-export default function BlogPage({ data, pageContext }) {
+export default function CategoryDetails({ data }) {
   const blogs = data.allSanityPost.edges;
-  const { currentPage, numberOfPages } = pageContext;
 
   return (
     <Layout>
       <BlogList blogs={blogs} />
-      {numberOfPages > 1 && (
-        <Pagination
-          currentPage={currentPage}
-          numberOfPages={numberOfPages}
-          baseURL="/blog"
-        />
-      )}
     </Layout>
   );
 }
 
 export const query = graphql`
-  query ($limit: Int, $offset: Int) {
-    allSanityPost(sort: { _createdAt: DESC }, limit: $limit, skip: $offset) {
+  query ($id: String) {
+    sanityCategory(id: { eq: $id }) {
+      title
+    }
+    allSanityPost(filter: { categories: { elemMatch: { id: { eq: $id } } } }) {
       edges {
         node {
+          id
           title
           mainImage {
             asset {

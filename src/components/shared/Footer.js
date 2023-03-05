@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="container">
         <ul className="footer_top mb-3">
           <li>
-            <Link to="/">Support</Link>
+            <Link to="/contact">Support</Link>
           </li>
           <li>
-            <Link to="/">Privacy</Link>
+            <Link to="/privacy-policy">Privacy</Link>
           </li>
           <li>
-            <Link to="/">FAQ</Link>
+            <Link to="/faq">FAQ</Link>
           </li>
         </ul>
 

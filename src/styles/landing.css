@@ -21,8 +21,13 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-td,
 th {
+  background-color: #eeeded;
+  border: 1px solid #ebeaea;
+  text-align: left;
+  padding: 8px;
+}
+td {
   border: 1px solid #ebeaea;
   text-align: left;
   padding: 8px;

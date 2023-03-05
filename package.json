@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "clsx": "^1.2.1",
     "gatsby": "^5.7.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
