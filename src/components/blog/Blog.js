@@ -3,7 +3,6 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 const Blog = ({ blogs }) => {
-  console.log(blogs);
   return (
     <div className="blog_page_list">
       {blogs.map((blog, i) => {

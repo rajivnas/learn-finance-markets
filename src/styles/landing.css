@@ -15,6 +15,22 @@
   color: var(--dark);
 }
 
+/* Table  */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #ebeaea;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
 /* Banner section  */
 .banner {
   height: calc(100vh - 58px);
@@ -61,6 +77,11 @@
 /* Feature section  */
 .feature {
   background-color: var(--bg-primary);
+}
+
+/* Exchange grap  */
+.NSEGraph {
+  display: none;
 }
 
 /* Latest section  */
@@ -112,6 +133,11 @@
   .banner .container .img_block {
     margin: 2rem 0 0 0;
     max-width: 600px;
+  }
+
+  /* Exchange grap  */
+  .NSEGraph {
+    display: block;
   }
 
   /* Feature & Latest section  */
