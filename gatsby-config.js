@@ -44,13 +44,5 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: "https://learn-finance-markets.vercel.app",
-        sitemap: "https://learn-finance-markets.vercel.app/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
-      },
-    },
   ],
 };

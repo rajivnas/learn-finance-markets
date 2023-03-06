@@ -37,6 +37,7 @@ const Navbar = () => {
           <div className={animate ? "change" : ""}>
             <button
               className="hamburger"
+              title="hamburger"
               onClick={() => [setShow(!show), setAnimate(!animate)]}
             >
               <div className="bar1"></div>
