@@ -2,12 +2,14 @@ import { graphql, Link } from "gatsby";
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/shared/Layout";
+import SiteSEO from "../components/shared/SiteSEO";
 
 export default function Author({ data }) {
   const authors = data.allSanityAuthor.edges;
 
   return (
     <Layout>
+      <SiteSEO title="Author" />
       <div className="author_page container py-3">
         <div className="section_title">
           <h2>All Authors</h2>

@@ -4,11 +4,13 @@ import Feature from "../components/landing/Feature";
 import Latest from "../components/landing/Latest";
 import NSEGraph from "../components/landing/NSEGraph";
 import Layout from "../components/shared/Layout";
+import SiteSEO from "../components/shared/SiteSEO";
 
 export default function Home({ serverData }) {
   const NSEIndex = serverData;
   return (
     <Layout>
+      <SiteSEO title="Learn Finance Related Information For Free" />
       <Banner />
       <Feature />
       <NSEGraph NSEIndex={NSEIndex} />

@@ -3,12 +3,14 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/shared/Layout";
 import Related from "../components/blog/sidebar/Related";
+import SiteSEO from "../components/shared/SiteSEO";
 
 export default function BlogPreview({ data }) {
   const { mainImage, title, related } = data.sanityPost;
 
   return (
     <Layout>
+      <SiteSEO title={title} />
       <div className="blog_preview py-2">
         <div className="container">
           <GatsbyImage image={mainImage.asset.gatsbyImageData} alt={title} />

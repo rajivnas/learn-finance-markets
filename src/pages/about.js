@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/shared/Layout";
+import SiteSEO from "../components/shared/SiteSEO";
 
 export default function About() {
   return (
     <Layout>
+      <SiteSEO title="About" />
       <section className="about_page">
         <div className="container py-3">
           <div className="section_title">

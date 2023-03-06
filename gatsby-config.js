@@ -13,6 +13,17 @@ require("dotenv").config({
 });
 
 module.exports = {
+  siteMetadata: {
+    title: `Learn Finance Markets`,
+    description: `Learn Finance Markets - is a financial related blog site`,
+    siteUrl: `https://learn-finance-markets.vercel.app`,
+    keywords: [
+      "Finance Markets",
+      "Stock Markets",
+      "Investment",
+      "Cryptocurrency",
+    ],
+  },
   plugins: [
     {
       resolve: "gatsby-plugin-web-font-loader",
@@ -32,5 +43,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://learn-finance-markets.vercel.app",
+        sitemap: "https://learn-finance-markets.vercel.app/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
   ],
 };

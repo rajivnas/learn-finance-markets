@@ -1,12 +1,14 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../components/shared/Layout";
+import SiteSEO from "../components/shared/SiteSEO";
 
 export default function Category({ data }) {
   const categories = data.allSanityCategory.edges;
 
   return (
     <Layout>
+      <SiteSEO title="Category" />
       <div className="container py-3">
         <div className="section_title">
           <h2>Listed Categories</h2>

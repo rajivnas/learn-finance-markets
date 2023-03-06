@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "../components/shared/Layout";
+import SiteSEO from "../components/shared/SiteSEO";
 
 export default function Contact() {
   return (
     <Layout>
+      <SiteSEO title="Contact" />
       <div className="contact py-3">
         <div className="container contack_block">
           <div className="contact_img_block">

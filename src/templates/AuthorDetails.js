@@ -2,12 +2,14 @@ import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/shared/Layout";
+import SiteSEO from "../components/shared/SiteSEO";
 
 export default function AuthorDetails({ data }) {
   const { name, image } = data.sanityAuthor;
 
   return (
     <Layout>
+      <SiteSEO title={name} />
       <div className="container py-3">
         <div className="author_block">
           <div className="author_img">
