@@ -5,6 +5,7 @@ import Layout from "../components/shared/Layout";
 import Related from "../components/blog/sidebar/Related";
 import SiteSEO from "../components/shared/SiteSEO";
 import PortableRichText from "../components/blog/PortableRichText";
+import TextMap from "../components/blog/TextMap";
 
 export default function BlogPreview({ data }) {
   const {
@@ -37,6 +38,7 @@ export default function BlogPreview({ data }) {
             <div className="main_content">
               <h1>{title}</h1>
               <PortableRichText _rawBody={_rawBody} />
+              <TextMap _rawBody={_rawBody} />
               <div className="post_author">
                 <Link to={`/author/${author.slug.current}`}>
                   <span>- {author.name}</span>
