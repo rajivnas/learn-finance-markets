@@ -69,7 +69,6 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: edge.node.slug.current,
         relatedPosts: edge.node.related,
       },
-      defer: index + 1 > 5,
     });
   });
 
