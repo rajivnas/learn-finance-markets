@@ -23,6 +23,7 @@ const PortableRichText = ({ _rawBody }) => {
           display: isInline ? "inline-block" : "block",
           aspectRatio: width / height,
         }}
+        className="blog_preview_img"
       />
     );
   };
@@ -48,8 +49,9 @@ const PortableRichText = ({ _rawBody }) => {
       },
     },
     block: {
-      h2: ({ children }) => <h2>{children}</h2>,
-      h3: ({ children }) => <h3>{children}</h3>,
+      h2: ({ children }) => <h2 className="blog_preview_h2">{children}</h2>,
+      h3: ({ children }) => <h3 className="blog_preview_h3">{children}</h3>,
+      h4: ({ children }) => <h4 className="blog_preview_h4">{children}</h4>,
     },
     list: {
       bullet: ({ children }) => <ul>{children}</ul>,
