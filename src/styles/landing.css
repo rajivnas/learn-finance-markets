@@ -1,6 +1,6 @@
 :root {
-  --banner: rgb(242, 252, 252);
-  --primary: #3dcfd3;
+  --banner: rgb(242, 251, 252);
+  --primary: #057d9b;
   --bg-primary: rgb(251, 255, 255);
   --bg-secondary: rgb(244, 250, 250);
   --dark: #161616;
@@ -68,7 +68,8 @@ tr:nth-child(even) {
   border: 1px solid transparent;
 }
 .banner .container .text_block .btn_banner:hover {
-  background-color: #3ec7cc;
+  background-color: #1aa3c5;
+  transition: background-color 0.3s ease-in-out 0.2s;
 }
 .banner .container .img_block {
   margin: 0 auto;
