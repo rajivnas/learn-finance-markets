@@ -67,7 +67,7 @@ export default function About() {
           <div className="admin_link">
             <span>
               <a
-                href="http://localhost:3333/desk"
+                href="https://lfm-server.sanity.studio/"
                 target="_blank"
                 rel="noreferrer"
               >
