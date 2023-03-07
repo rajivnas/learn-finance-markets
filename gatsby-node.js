@@ -68,6 +68,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: edge.node.slug.current,
         relatedPosts: edge.node.related,
       },
+      defer: true,
     });
   });
 
@@ -80,6 +81,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         id: edge.node.id,
       },
+      defer: true,
     });
   });
 
@@ -92,6 +94,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.slug.current,
       },
+      defer: true,
     });
   });
 

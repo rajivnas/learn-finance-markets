@@ -3,19 +3,19 @@ import React from "react";
 
 const Related = ({ related }) => {
   return (
-    <div className="side_banner">
+    <div className="pre_sidebar">
       <h3>Related</h3>
-      <div className="recent">
+      <ul className="related">
         {related.map((item, i) => {
           return (
-            <div key={i}>
+            <li key={i}>
               <Link to={`/blog/${item.slug.current}`}>
                 <p>{item.title}</p>
               </Link>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 };

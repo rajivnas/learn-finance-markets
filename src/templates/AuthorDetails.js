@@ -3,9 +3,10 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/shared/Layout";
 import SiteSEO from "../components/shared/SiteSEO";
+import PortableAuthor from "../components/blog/PortableAuthor";
 
 export default function AuthorDetails({ data }) {
-  const { name, image } = data.sanityAuthor;
+  const { name, image, _rawBio } = data.sanityAuthor;
 
   return (
     <Layout>
@@ -21,16 +22,7 @@ export default function AuthorDetails({ data }) {
           </div>
           <div className="author_info">
             <h2>{name}</h2>
-            {/* <PortableAuthor _rawBio={_rawBio} /> */}
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-              qui amet eius. Voluptas optio architecto iusto, dolorum possimus
-              nesciunt quasi molestiae rerum enim, beatae laboriosam iste
-              accusamus quia. Hic consectetur dicta corrupti asperiores
-              excepturi esse eveniet pariatur ea deserunt, ex quisquam velit
-              incidunt repellendus praesentium cum dolore repellat aperiam.
-              Delectus.
-            </p>
+            <PortableAuthor _rawBio={_rawBio} />
           </div>
         </div>
       </div>

@@ -20,7 +20,10 @@ const Footer = () => {
         <div className="footer_bottom">
           <p>Copyright ©{new Date().getFullYear()} rights reserved</p>
           <p className="footer_credit">
-            Created by <a href="https://www.kishore.dev/">kishore.dev</a>
+            Created by{" "}
+            <a href="https://www.kishore.dev/" target="_blank" rel="noreferrer">
+              kishore.dev
+            </a>
           </p>
         </div>
       </div>

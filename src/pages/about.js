@@ -63,6 +63,18 @@ export default function About() {
               voluptatum cum hic odio.
             </p>
           </div>
+
+          <div className="admin_link">
+            <span>
+              <a
+                href="http://localhost:3333/desk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Admin
+              </a>
+            </span>
+          </div>
         </div>
       </section>
     </Layout>
