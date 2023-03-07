@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const authors = result.data.allSanityAuthor.edges || [];
 
   // single blogs pages
-  blogs.forEach((edge) => {
+  blogs.forEach((edge, index) => {
     const path = `/blog/${edge.node.slug.current}`;
     createPage({
       // defer: true,
@@ -69,6 +69,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: edge.node.slug.current,
         relatedPosts: edge.node.related,
       },
+      defer: index + 1 > 5,
     });
   });
 
