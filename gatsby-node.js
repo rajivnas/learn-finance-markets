@@ -62,13 +62,13 @@ exports.createPages = async ({ graphql, actions }) => {
   blogs.forEach((edge) => {
     const path = `/blog/${edge.node.slug.current}`;
     createPage({
+      // defer: true,
       path,
       component: blogTemplate,
       context: {
         slug: edge.node.slug.current,
         relatedPosts: edge.node.related,
       },
-      defer: true,
     });
   });
 
@@ -81,7 +81,6 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         id: edge.node.id,
       },
-      defer: true,
     });
   });
 
@@ -94,7 +93,6 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.slug.current,
       },
-      defer: true,
     });
   });
 
