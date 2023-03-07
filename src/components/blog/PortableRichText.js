@@ -9,8 +9,8 @@ const PortableRichText = ({ _rawBody }) => {
     return (
       <img
         src={urlBuilder({
-          projectId: process.env.SANITY_PROJECT_ID,
-          dataset: process.env.SANITY_DATASET,
+          projectId: "cjdi2110",
+          dataset: "production",
         })
           .image(value)
           .width(isInline ? 100 : 800)
