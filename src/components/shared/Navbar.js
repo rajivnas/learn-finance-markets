@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="nav_wrapper">
           <div className="logo">
             <Link to="/">
-              <img src="/logo.png" alt="Logo" />
+              <img src="/logo.png" width={80} height={30} alt="Logo" />
             </Link>
           </div>
 
