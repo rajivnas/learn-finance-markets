@@ -18,7 +18,7 @@ const Banner = () => {
           </Link>
         </div>
         <div className="img_block">
-          <img src="banner.svg" width={100} height="auto" alt="Banner" />
+          <img src="banner.svg" width={600} height={400} alt="Banner" />
         </div>
       </div>
     </section>
