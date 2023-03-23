@@ -59,10 +59,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const authors = result.data.allSanityAuthor.edges || [];
 
   // single blogs pages
-  blogs.forEach((edge, index) => {
+  blogs.forEach((edge) => {
     const path = `/blog/${edge.node.slug.current}`;
     createPage({
-      // defer: true,
+      defer: true,
       path,
       component: blogTemplate,
       context: {
