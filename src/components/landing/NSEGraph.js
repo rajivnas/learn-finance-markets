@@ -1,6 +1,7 @@
 import React from "react";
 
 const NSEGraph = ({ NSEIndex }) => {
+  console.log(NSEIndex);
   return (
     <section className="NSEGraph">
       <div className="container py-3">

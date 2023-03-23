@@ -24,6 +24,9 @@ module.exports = {
       "Cryptocurrency",
     ],
   },
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   plugins: [
     {
       resolve: `gatsby-source-sanity`,
